@@ -1,0 +1,166 @@
+/* RESET */
+* {
+    border: 0;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* STYLE */
+body {
+    align-items: center;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 3rem;
+    width: 40%;
+}
+
+.illustration {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    margin: 3.5rem auto;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin: 1rem auto 2rem;
+}
+
+.register {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50px;
+    box-shadow: 2px 3px 15px hsl(0, 0%, 3%);
+    color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+    padding: .75rem 5rem;
+    width: 100%;
+}
+
+.register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: inherit;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 40%;
+}
+
+.icon {
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50px;
+    padding: .5rem;
+}
+
+.icon:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+.fa-brands {
+    height: 1rem;
+    width: 1rem;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 720px) {
+    body {
+        background-image: url("./images/bg-desktop.svg");
+        background-size: contain;
+        min-height: 100vh;
+        padding: 3vw 5vw;
+    }
+    .container {
+        height: 80vh;
+    }
+    header {
+        width: 13%;
+    }
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+    .illustration {
+        margin: auto 0;
+        width: 50%;
+    }
+    .info {
+        margin: 0;
+        padding: 3vw 4.5vw;
+        text-align: left;
+        width: 45%;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .description {
+        line-height: 1.5;
+    }
+    .socials {
+        justify-content: end;
+        margin: 1rem auto;
+        width: 100%;
+    }
+    .icon {
+        margin-left: .75rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .title {
+        font-size: 2rem;
+    }
+}
